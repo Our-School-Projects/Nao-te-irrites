@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqpoxrnylomeg"]
+
+[ext_resource type="Texture2D" uid="uid://fp75lx0gk5fg" path="res://peaces/protverde__2_-removebg-preview.png" id="1_idlp6"]
+
+[node name="Protverde2-removebg-preview" type="Sprite2D"]
+position = Vector2(347, 350)
+texture = ExtResource("1_idlp6")

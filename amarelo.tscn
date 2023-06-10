@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcnxonjcbyesi"]
+
+[ext_resource type="Texture2D" uid="uid://bp2uejf7y48t1" path="res://peaces/protamarelo__2_-removebg-preview.png" id="1_i4cvm"]
+
+[node name="Protamarelo2-removebg-preview" type="Sprite2D"]
+position = Vector2(1034, 489)
+texture = ExtResource("1_i4cvm")

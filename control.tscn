@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmmasla3bj6pt"]
+
+[ext_resource type="Script" path="res://control.gd" id="1_br3qw"]
+[ext_resource type="Texture2D" uid="uid://bcr2ydaqmdttu" path="res://logooficial.PNG" id="2_aqqqg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 4.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_br3qw")
+
+[node name="Logooficial" type="Sprite2D" parent="."]
+position = Vector2(959, 536)
+scale = Vector2(2.41006, 2.16162)
+texture = ExtResource("2_aqqqg")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 872.0
+offset_right = 1315.0
+offset_bottom = 904.0
+
+[node name="Timer" type="Timer" parent="ProgressBar"]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="ProgressBar/Timer" to="." method="_on_timer_timeout"]

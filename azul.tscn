@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cll4l66p2hume"]
+
+[ext_resource type="Texture2D" uid="uid://cck7x0rxna6xo" path="res://peaces/protazul3__2_-removebg-preview.png" id="1_1m1we"]
+
+[node name="Protazul32-removebg-preview" type="Sprite2D"]
+position = Vector2(754, 352)
+texture = ExtResource("1_1m1we")

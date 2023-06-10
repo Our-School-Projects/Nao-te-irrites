@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv61u6xqct3xf"]
+
+[ext_resource type="Texture2D" uid="uid://xiv1pogjhip4" path="res://peaces/protvermelho__3_-removebg-preview.png" id="1_8nbh0"]
+
+[node name="Protvermelho3-removebg-preview" type="Sprite2D"]
+position = Vector2(493, 430)
+texture = ExtResource("1_8nbh0")

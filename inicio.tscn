@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6pu34apqx3dy"]
+
+[ext_resource type="Texture2D" uid="uid://blhaktdholvqp" path="res://Settings.png" id="1_twtyr"]
+[ext_resource type="Script" path="res://inicio.cs" id="2_fu67g"]
+[ext_resource type="Texture2D" uid="uid://wcjd2dqs5gfy" path="res://Iniciar (1).png" id="5_wab7y"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Iniciar(1)" type="Sprite2D" parent="."]
+position = Vector2(966, 536)
+texture = ExtResource("5_wab7y")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="Node"]
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Button" type="Button" parent="Node/Panel"]
+layout_mode = 0
+offset_left = 678.0
+offset_top = 474.0
+offset_right = 1241.0
+offset_bottom = 610.0
+mouse_default_cursor_shape = 2
+flat = true
+script = ExtResource("2_fu67g")
+
+[node name="Contro" type="Sprite2D" parent="Node/Panel/Button"]
+position = Vector2(283, 69)
+texture = ExtResource("1_twtyr")

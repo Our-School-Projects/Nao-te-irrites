@@ -1,0 +1,331 @@
+[gd_scene load_steps=19 format=3 uid="uid://cd16to24qw0ky"]
+
+[ext_resource type="Texture2D" uid="uid://c735lyvln0sbq" path="res://undefined - Imgur.jpg" id="1_bu3w7"]
+[ext_resource type="Texture2D" uid="uid://b6laxrd7ojliy" path="res://background block.png" id="2_snl3c"]
+[ext_resource type="Texture2D" uid="uid://c7q1tq1oeh4bm" path="res://wrapper.png" id="3_ix6hf"]
+[ext_resource type="Script" path="res://check.cs" id="3_vhb3x"]
+[ext_resource type="Texture2D" uid="uid://ddhgitru6uo6x" path="res://Back.png" id="4_f5m5d"]
+[ext_resource type="Script" path="res://sair.cs" id="5_ffaib"]
+[ext_resource type="Texture2D" uid="uid://bee0fv1ak14uq" path="res://Controls.png" id="5_jkqcm"]
+[ext_resource type="Texture2D" uid="uid://b1yed5xyk57v1" path="res://Settings (1).png" id="7_0c7kq"]
+[ext_resource type="Texture2D" uid="uid://cthd73r8vkcga" path="res://Selected.png" id="7_yb3sc"]
+[ext_resource type="Texture2D" uid="uid://djk3jf34l1ap7" path="res://Controls (1).png" id="8_3syo6"]
+[ext_resource type="Texture2D" uid="uid://iqxo7iajjkq0" path="res://wrapper (1).png" id="8_ghhel"]
+[ext_resource type="Texture2D" uid="uid://dt8dh3n2628eg" path="res://Key map.png" id="9_81fi1"]
+[ext_resource type="Texture2D" uid="uid://4ywk5edh1i5p" path="res://Jogadores.png" id="9_tfqay"]
+[ext_resource type="Texture2D" uid="uid://crsh7jcu1pnpv" path="res://Key map (1).png" id="10_kj4g1"]
+[ext_resource type="Texture2D" uid="uid://bdq6d22k85g3l" path="res://Key map (3).png" id="15_ivmhf"]
+[ext_resource type="Texture2D" uid="uid://dgq7krkmowuhc" path="res://Key map (2).png" id="16_ocql2"]
+[ext_resource type="Texture2D" uid="uid://htquod8st8tr" path="res://Rectangle 1.png" id="17_vhkak"]
+[ext_resource type="Script" path="res://Button2.cs" id="18_d7e16"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Undefined-Imgur" type="Sprite2D" parent="Panel"]
+position = Vector2(962.5, 539)
+scale = Vector2(0.747266, 0.75)
+texture = ExtResource("1_bu3w7")
+
+[node name="BackgroundBlock" type="Sprite2D" parent="Panel/Undefined-Imgur"]
+position = Vector2(-6.02209, 5.33325)
+scale = Vector2(1.33821, 1.33333)
+texture = ExtResource("2_snl3c")
+
+[node name="Wrapper" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+position = Vector2(-576, 105)
+texture = ExtResource("3_ix6hf")
+
+[node name="Back" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper"]
+position = Vector2(-114, 252)
+texture = ExtResource("4_f5m5d")
+
+[node name="Control3" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper/Back"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -82.5
+offset_right = 17.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper/Back/Control3"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 132.0
+offset_bottom = 79.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+flat = true
+script = ExtResource("5_ffaib")
+
+[node name="Controls" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper"]
+position = Vector2(12, -224)
+texture = ExtResource("5_jkqcm")
+
+[node name="Control" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper/Controls"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -153.0
+offset_top = -36.0
+offset_right = 151.0
+offset_bottom = 49.0
+
+[node name="Button" type="Button" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper/Controls/Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 6.0
+offset_right = 299.0
+offset_bottom = 77.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+flat = true
+
+[node name="Selected" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper"]
+position = Vector2(-162, -224)
+texture = ExtResource("7_yb3sc")
+
+[node name="Controls(1)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper"]
+visible = false
+position = Vector2(47, -113)
+scale = Vector2(0.830097, 0.830097)
+texture = ExtResource("8_3syo6")
+
+[node name="Selected2" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper"]
+visible = false
+position = Vector2(-165, -113)
+texture = ExtResource("7_yb3sc")
+
+[node name="Jogadores" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper"]
+visible = false
+position = Vector2(-60, -215)
+texture = ExtResource("9_tfqay")
+
+[node name="Settings(1)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+position = Vector2(-534, -335)
+texture = ExtResource("7_0c7kq")
+
+[node name="Wrapper(1)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+position = Vector2(296, 105)
+texture = ExtResource("8_ghhel")
+
+[node name="KeyMap" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)"]
+position = Vector2(3, -180)
+texture = ExtResource("9_81fi1")
+
+[node name="Control" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap"]
+layout_mode = 3
+anchor_left = 0.105
+anchor_top = 0.5
+anchor_right = 0.105
+anchor_bottom = 0.5
+offset_left = -296.775
+offset_top = -63.5
+offset_right = 280.225
+offset_bottom = -5.5
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap/Control"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.310345
+anchor_bottom = 0.310345
+offset_top = -15.0
+offset_right = 589.0
+offset_bottom = 47.0
+theme_override_font_sizes/font_size = 35
+placeholder_text = "Jogador 1"
+metadata/_edit_use_anchors_ = true
+
+[node name="KeyMap(1)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)"]
+position = Vector2(3, -105)
+texture = ExtResource("10_kj4g1")
+
+[node name="Control2" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap(1)"]
+layout_mode = 3
+anchor_left = 0.116
+anchor_top = 0.5
+anchor_right = 0.116
+anchor_bottom = 0.5
+offset_left = -305.18
+offset_top = -55.5
+offset_right = 271.82
+offset_bottom = 2.5
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap(1)/Control2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0344833
+anchor_bottom = 0.0344833
+offset_left = -3.0
+offset_top = -8.0
+offset_right = 586.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 35
+placeholder_text = "Jogador 2"
+wrap_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Node" type="Node" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)"]
+
+[node name="Label" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node"]
+offset_left = 1062.0
+offset_top = 373.0
+offset_right = 1102.0
+offset_bottom = 396.0
+theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
+theme_override_font_sizes/font_size = 35
+text = "2"
+
+[node name="CheckBox" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node/Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.231
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 13.988
+scale = Vector2(2, 2)
+disabled = true
+button_pressed = true
+
+[node name="Label2" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node"]
+offset_left = 1190.0
+offset_top = 373.0
+offset_right = 1230.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
+theme_override_font_sizes/font_size = 35
+text = "3"
+
+[node name="CheckBox2" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node/Label2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.231
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 13.988
+scale = Vector2(2, 2)
+
+[node name="Label3" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node"]
+offset_left = 1340.0
+offset_top = 373.0
+offset_right = 1380.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
+theme_override_font_sizes/font_size = 35
+text = "4"
+
+[node name="CheckBox3" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node/Label3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.231
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 13.988
+scale = Vector2(2, 2)
+script = ExtResource("3_vhb3x")
+
+[node name="KeyMap3" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+visible = false
+position = Vector2(302, 81.0003)
+texture = ExtResource("15_ivmhf")
+
+[node name="Control2" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap3"]
+layout_mode = 3
+anchor_left = 0.105
+anchor_top = 0.5
+anchor_right = 0.105
+anchor_bottom = 0.5
+offset_left = -299.775
+offset_top = -60.5001
+offset_right = 277.225
+offset_bottom = -2.50006
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap3/Control2"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0034662
+anchor_top = 0.293104
+anchor_right = 0.0034662
+anchor_bottom = 0.293104
+offset_top = -15.0
+offset_right = 589.0
+offset_bottom = 47.0
+theme_override_font_sizes/font_size = 35
+placeholder_text = "Jogador 3"
+metadata/_edit_use_anchors_ = true
+
+[node name="KeyMap(2)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+visible = false
+position = Vector2(296, 159)
+texture = ExtResource("16_ocql2")
+
+[node name="Control3" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap(2)"]
+layout_mode = 3
+anchor_left = 0.105
+anchor_top = 0.5
+anchor_right = 0.105
+anchor_bottom = 0.5
+offset_left = -295.775
+offset_top = -64.5
+offset_right = 281.225
+offset_bottom = -6.5
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap(2)/Control3"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00693241
+anchor_top = 0.241379
+anchor_right = 0.00693241
+anchor_bottom = 0.241379
+offset_top = -15.0
+offset_right = 589.0
+offset_bottom = 47.0
+theme_override_font_sizes/font_size = 35
+placeholder_text = "Jogador 4"
+metadata/_edit_use_anchors_ = true
+
+[node name="Rectangle1" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+position = Vector2(635.001, 376.001)
+scale = Vector2(0.462613, 0.671876)
+texture = ExtResource("17_vhkak")
+
+[node name="Button2" type="Button" parent="Panel/Undefined-Imgur/BackgroundBlock/Rectangle1"]
+offset_left = -303.0
+offset_top = -63.0
+offset_right = 274.0
+offset_bottom = 61.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+flat = true
+script = ExtResource("18_d7e16")
+
+[node name="Label" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Rectangle1"]
+offset_left = -108.082
+offset_top = -58.0465
+offset_right = 129.918
+offset_bottom = 47.9535
+theme_override_font_sizes/font_size = 75
+text = "Jogar"

@@ -1,0 +1,600 @@
+[gd_scene load_steps=63 format=3 uid="uid://b58w85my5y17s"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_6tbfo"]
+[ext_resource type="Texture2D" uid="uid://c735lyvln0sbq" path="res://undefined - Imgur.jpg" id="1_g11af"]
+[ext_resource type="Texture2D" uid="uid://iqxo7iajjkq0" path="res://wrapper (1).png" id="2_03jkc"]
+[ext_resource type="Script" path="res://player.gd" id="2_f71fh"]
+[ext_resource type="Texture2D" uid="uid://cpdy8g1n87ab8" path="res://IMG-20230528-WA0020.jpg" id="3_yd4ua"]
+[ext_resource type="Texture2D" uid="uid://djk50b8m2allb" path="res://placeholder.png" id="5_30h3p"]
+[ext_resource type="Texture2D" uid="uid://cvpsu86syjky5" path="res://img/diceFive.png" id="6_8eylp"]
+[ext_resource type="Texture2D" uid="uid://cdx3s7hjy2fc6" path="res://img/diceFour.png" id="7_q5e7w"]
+[ext_resource type="Texture2D" uid="uid://8kdir1x0ve0t" path="res://img/diceOne.png" id="8_8ipmt"]
+[ext_resource type="Texture2D" uid="uid://c8ty6pcisuk1p" path="res://img/diceSix.png" id="9_rp0om"]
+[ext_resource type="Texture2D" uid="uid://ddge4y01ecah7" path="res://img/diceThree.png" id="10_eyx7l"]
+[ext_resource type="Texture2D" uid="uid://bgvub6gmapcb4" path="res://img/diceTwo.png" id="11_w2hxo"]
+[ext_resource type="Texture2D" uid="uid://b3bs4ex7igvjy" path="res://ani/01.png" id="12_pstlw"]
+[ext_resource type="Texture2D" uid="uid://bj4ij6ujyjene" path="res://ani/02.png" id="13_l1m0g"]
+[ext_resource type="Texture2D" uid="uid://ky5a2pv8djpf" path="res://ani/03.png" id="14_g7202"]
+[ext_resource type="Texture2D" uid="uid://u8082r8jerli" path="res://ani/04.png" id="15_ma3n2"]
+[ext_resource type="Texture2D" uid="uid://dtt5fcrfgibg" path="res://ani/05.png" id="16_kmob8"]
+[ext_resource type="Texture2D" uid="uid://sj2aak287g0k" path="res://ani/06.png" id="17_ekm8m"]
+[ext_resource type="Texture2D" uid="uid://pjiynl20420b" path="res://ani/07.png" id="18_4fpnw"]
+[ext_resource type="Texture2D" uid="uid://dxx5uyr7g3v3l" path="res://ani/08.png" id="19_ojukv"]
+[ext_resource type="Texture2D" uid="uid://cy4iqli4p2em2" path="res://ani/09.png" id="20_lfsi4"]
+[ext_resource type="Texture2D" uid="uid://dt44ubadyjmgj" path="res://ani/10.png" id="21_aw04t"]
+[ext_resource type="Texture2D" uid="uid://7aceypxrqptg" path="res://ani/11.png" id="22_bjhvv"]
+[ext_resource type="Texture2D" uid="uid://bv2imeydtkltt" path="res://ani/12.png" id="23_4w0ef"]
+[ext_resource type="Texture2D" uid="uid://drsbyaumh8vvf" path="res://ani/13.png" id="24_n6jpw"]
+[ext_resource type="Texture2D" uid="uid://pbyvtc16k1wg" path="res://ani/14.png" id="25_atnu4"]
+[ext_resource type="Texture2D" uid="uid://fcfwc0dv7war" path="res://ani/15.png" id="26_7xb40"]
+[ext_resource type="Texture2D" uid="uid://dvls3q4inxxvx" path="res://ani/16.png" id="27_j4sbp"]
+[ext_resource type="Texture2D" uid="uid://1toy2wb3y2eu" path="res://ani/17.png" id="28_h1vya"]
+[ext_resource type="Texture2D" uid="uid://totjjq0cr4f6" path="res://ani/18.png" id="29_hdqqf"]
+[ext_resource type="Texture2D" uid="uid://ds8icbookk7y7" path="res://ani/19.png" id="30_5y8k1"]
+[ext_resource type="Texture2D" uid="uid://cqesuexrmkoyl" path="res://ani/20.png" id="31_g6ram"]
+[ext_resource type="Texture2D" uid="uid://b7xi6xixpuh0j" path="res://ani/21.png" id="32_7ofah"]
+[ext_resource type="Texture2D" uid="uid://dc507t2rgs8tv" path="res://ani/22.png" id="33_nhv6p"]
+[ext_resource type="Texture2D" uid="uid://mf7j74htlkxi" path="res://ani/23.png" id="34_s6av7"]
+[ext_resource type="Texture2D" uid="uid://bdriuuse4f06m" path="res://ani/24.png" id="35_ure60"]
+[ext_resource type="Texture2D" uid="uid://dsgwsmlpi5gp8" path="res://ani/25.png" id="36_lf2gi"]
+[ext_resource type="Texture2D" uid="uid://dni4uxrrcc5ka" path="res://ani/26.png" id="37_7ci0n"]
+[ext_resource type="Texture2D" uid="uid://bo45mmpanofll" path="res://ani/27.png" id="38_cm3gd"]
+[ext_resource type="Texture2D" uid="uid://6a4iadapcp8k" path="res://ani/28.png" id="39_ltbqe"]
+[ext_resource type="Texture2D" uid="uid://5fhg1f04hks0" path="res://ani/29.png" id="40_8pw0k"]
+[ext_resource type="Texture2D" uid="uid://ctt2bgg4nl71t" path="res://ani/30.png" id="41_uaq8g"]
+[ext_resource type="Texture2D" uid="uid://v45lsnxcfegj" path="res://ani/31.png" id="42_n4y8e"]
+[ext_resource type="Texture2D" uid="uid://bitapd86jfxba" path="res://ani/32.png" id="43_et846"]
+[ext_resource type="Texture2D" uid="uid://dgn7r5fgkcsy1" path="res://icon.svg" id="45_qbjvx"]
+[ext_resource type="Script" path="res://Blue.gd" id="46_ksk1k"]
+[ext_resource type="PackedScene" uid="uid://cll4l66p2hume" path="res://azul.tscn" id="47_vpqs8"]
+[ext_resource type="PackedScene" uid="uid://bv61u6xqct3xf" path="res://vermelho.tscn" id="48_1rabs"]
+[ext_resource type="Script" path="res://Red.gd" id="48_tpk7s"]
+[ext_resource type="PackedScene" uid="uid://dqpoxrnylomeg" path="res://verde.tscn" id="49_nv0lk"]
+[ext_resource type="Script" path="res://Green.gd" id="50_776qp"]
+[ext_resource type="PackedScene" uid="uid://bcnxonjcbyesi" path="res://amarelo.tscn" id="50_q3st6"]
+[ext_resource type="Script" path="res://Yellow.gd" id="52_c77rj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tks5a"]
+atlas = ExtResource("45_qbjvx")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_84lv6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tks5a")
+}],
+"loop": true,
+"name": &"Icon",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qsyym"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_srolj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6yfpv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_8ipmt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_w2hxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_eyx7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_q5e7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8eylp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rp0om")
+}],
+"loop": true,
+"name": &"Dice",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_pstlw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l1m0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7202")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ma3n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_kmob8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ekm8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4fpnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ojukv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_lfsi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_aw04t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_bjhvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_4w0ef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_n6jpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_atnu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_7xb40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_j4sbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_h1vya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hdqqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_5y8k1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_g6ram")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_7ofah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_nhv6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_s6av7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ure60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_lf2gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_7ci0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_cm3gd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ltbqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_8pw0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_uaq8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_n4y8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_et846")
+}],
+"loop": false,
+"name": &"DiceRoll",
+"speed": 40.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_4feg1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 654, 616, 0, 0, 0, 0, 698, 617, 0, 0, 0, 0, 741, 617, 0, 0, 0, 0, 787, 617, 0, 0, 0, 0, 830, 617, 0, 0, 0, 0, 872, 618, 0, 0, 0, 0, 873, 652, 0, 0, 0, 0, 874, 695, 0, 0, 0, 0, 872, 740, 0, 0, 0, 0, 872, 786, 0, 0, 0, 0, 873, 827, 0, 0, 0, 0, 882, 875, 0, 0, 0, 0, 881, 920, 0, 0, 0, 0, 883, 960, 0, 0, 0, 0, 879, 1003, 0, 0, 0, 0, 956, 1007, 0, 0, 0, 0, 1047, 1000, 0, 0, 0, 0, 1047, 957, 0, 0, 0, 0, 1047, 916, 0, 0, 0, 0, 1045, 873, 0, 0, 0, 0, 1043, 830, 0, 0, 0, 0, 1042, 788, 0, 0, 0, 0, 1041, 744, 0, 0, 0, 0, 1042, 699, 0, 0, 0, 0, 1041, 657, 0, 0, 0, 0, 1042, 622, 0, 0, 0, 0, 1087, 607, 0, 0, 0, 0, 1132, 606, 0, 0, 0, 0, 1170, 607, 0, 0, 0, 0, 1214, 604, 0, 0, 0, 0, 1258, 606, 0, 0, 0, 0, 1307, 608, 0, 0, 0, 0, 1347, 608, 0, 0, 0, 0, 1393, 608, 0, 0, 0, 0, 1429, 609, 0, 0, 0, 0, 1432, 540, 0, 0, 0, 0, 1428, 431, 0, 0, 0, 0, 1391, 431, 0, 0, 0, 0, 1345, 431, 0, 0, 0, 0, 1302, 432, 0, 0, 0, 0, 1261, 436, 0, 0, 0, 0, 1216, 436, 0, 0, 0, 0, 1174, 437, 0, 0, 0, 0, 1130, 437, 0, 0, 0, 0, 1089, 434, 0, 0, 0, 0, 1044, 437, 0, 0, 0, 0, 1044, 391, 0, 0, 0, 0, 1045, 346, 0, 0, 0, 0, 1049, 307, 0, 0, 0, 0, 1048, 265, 0, 0, 0, 0, 1049, 219, 0, 0, 0, 0, 1041, 179, 0, 0, 0, 0, 1040, 130, 0, 0, 0, 0, 1038, 89, 0, 0, 0, 0, 1046, 43, 0, 0, 0, 0, 957, 44, 0, 0, 0, 0, 873, 47, 0, 0, 0, 0, 870, 89, 0, 0, 0, 0, 871, 130, 0, 0, 0, 0, 870, 175, 0, 0, 0, 0, 875, 228, 0, 0, 0, 0, 874, 273, 0, 0, 0, 0, 873, 317, 0, 0, 0, 0, 872, 361, 0, 0, 0, 0, 872, 410, 0, 0, 0, 0, 874, 453, 0, 0, 0, 0, 830, 452, 0, 0, 0, 0, 785, 452, 0, 0, 0, 0, 741, 452, 0, 0, 0, 0, 695, 451, 0, 0, 0, 0, 657, 452, 0, 0, 0, 0, 611, 450, 0, 0, 0, 0, 566, 451, 0, 0, 0, 0, 525, 451, 0, 0, 0, 0, 484, 450, 0, 0, 0, 0, 481, 541, 0, 0, 0, 0, 521, 541, 0, 0, 0, 0, 567, 540, 0, 0, 0, 0, 610, 540, 0, 0, 0, 0, 653, 540, 0, 0, 0, 0, 698, 539, 0, 0, 0, 0, 740, 540, 0, 0, 0, 0, 784, 539, 0, 0, 0, 0, 828, 541, 0, 0, 0, 0, 871, 543, 0, 0, 0, 0, 944, 541)
+}
+point_count = 86
+
+[sub_resource type="Curve2D" id="Curve2D_ppu6u"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1049.7, 836.151, 0, 0, 0, 0, 1047.69, 794.093, 0, 0, 0, 0, 1045.69, 749.031, 0, 0, 0, 0, 1045.69, 706.973, 0, 0, 0, 0, 1044.69, 662.913, 0, 0, 0, 0, 1043, 625, 0, 0, 0, 0, 1088, 609, 0, 0, 0, 0, 1134, 610, 0, 0, 0, 0, 1178, 609, 0, 0, 0, 0, 1220, 611, 0, 0, 0, 0, 1259, 611, 0, 0, 0, 0, 1307, 611, 0, 0, 0, 0, 1350, 611, 0, 0, 0, 0, 1392, 610, 0, 0, 0, 0, 1434.32, 608.838, 0, 0, 0, 0, 1433, 542, 0, 0, 0, 0, 1429, 437, 0, 0, 0, 0, 1391, 435, 0, 0, 0, 0, 1346, 433, 0, 0, 0, 0, 1303, 437, 0, 0, 0, 0, 1258, 439, 0, 0, 0, 0, 1217, 436, 0, 0, 0, 0, 1174, 437, 0, 0, 0, 0, 1129.82, 435.6, 0, 0, 0, 0, 1087.76, 435.6, 0, 0, 0, 0, 1046, 452, 0, 0, 0, 0, 1046.69, 393.542, 0, 0, 0, 0, 1049.69, 347.478, 0, 0, 0, 0, 1052.7, 307.423, 0, 0, 0, 0, 1049.69, 261.36, 0, 0, 0, 0, 1052.7, 221.305, 0, 0, 0, 0, 1047.69, 177.244, 0, 0, 0, 0, 1047.69, 135.186, 0, 0, 0, 0, 1044.69, 92.1268, 0, 0, 0, 0, 1046.69, 47.0648, 0, 0, 0, 0, 963.556, 47.0648, 0, 0, 0, 0, 873.41, 46.0634, 0, 0, 0, 0, 872.409, 91.1255, 0, 0, 0, 0, 875.413, 135.186, 0, 0, 0, 0, 876.415, 179.247, 0, 0, 0, 0, 876, 232, 0, 0, 0, 0, 875, 276, 0, 0, 0, 0, 876, 321, 0, 0, 0, 0, 875, 361, 0, 0, 0, 0, 875.413, 410.565, 0, 0, 0, 0, 875, 453, 0, 0, 0, 0, 833.346, 453.625, 0, 0, 0, 0, 789, 452, 0, 0, 0, 0, 743, 452, 0, 0, 0, 0, 698, 453, 0, 0, 0, 0, 657, 452, 0, 0, 0, 0, 611, 452, 0, 0, 0, 0, 567, 453, 0, 0, 0, 0, 527, 453, 0, 0, 0, 0, 482, 451, 0, 0, 0, 0, 483, 527, 0, 0, 0, 0, 482.779, 625.862, 0, 0, 0, 0, 526, 624, 0, 0, 0, 0, 573, 624, 0, 0, 0, 0, 613, 622, 0, 0, 0, 0, 656, 624, 0, 0, 0, 0, 699, 624, 0, 0, 0, 0, 743, 624, 0, 0, 0, 0, 786, 623, 0, 0, 0, 0, 830, 623, 0, 0, 0, 0, 873, 624, 0, 0, 0, 0, 874.412, 655.903, 0, 0, 0, 0, 874.412, 699.964, 0, 0, 0, 0, 875.413, 745.026, 0, 0, 0, 0, 875.413, 787.084, 0, 0, 0, 0, 876.415, 832.146, 0, 0, 0, 0, 884.428, 876.206, 0, 0, 0, 0, 888.434, 921.268, 0, 0, 0, 0, 888.434, 965.329, 0, 0, 0, 0, 886.431, 1006.39, 0, 0, 0, 0, 960, 1018, 0, 0, 0, 0, 958, 972, 0, 0, 0, 0, 956, 931, 0, 0, 0, 0, 956, 888, 0, 0, 0, 0, 956, 844, 0, 0, 0, 0, 962, 804, 0, 0, 0, 0, 964, 762, 0, 0, 0, 0, 965, 713, 0, 0, 0, 0, 964, 666, 0, 0, 0, 0, 964, 624, 0, 0, 0, 0, 964, 560)
+}
+point_count = 86
+
+[sub_resource type="Curve2D" id="Curve2D_lo3fk"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 873, 230, 0, 0, 0, 0, 875, 280, 0, 0, 0, 0, 874, 320, 0, 0, 0, 0, 871, 362, 0, 0, 0, 0, 874, 405, 0, 0, 0, 0, 871, 451, 0, 0, 0, 0, 828, 454, 0, 0, 0, 0, 789, 454, 0, 0, 0, 0, 743, 454, 0, 0, 0, 0, 696, 453, 0, 0, 0, 0, 658, 452, 0, 0, 0, 0, 612, 451, 0, 0, 0, 0, 567, 452, 0, 0, 0, 0, 527, 452, 0, 0, 0, 0, 484, 453, 0, 0, 0, 0, 482, 531, 0, 0, 0, 0, 486, 623, 0, 0, 0, 0, 525, 625, 0, 0, 0, 0, 570, 625, 0, 0, 0, 0, 612, 626, 0, 0, 0, 0, 657, 624, 0, 0, 0, 0, 701, 619, 0, 0, 0, 0, 745, 617, 0, 0, 0, 0, 789, 617, 0, 0, 0, 0, 831, 617, 0, 0, 0, 0, 873, 624, 0, 0, 0, 0, 875, 657, 0, 0, 0, 0, 875, 700, 0, 0, 0, 0, 876, 743, 0, 0, 0, 0, 879, 789, 0, 0, 0, 0, 879, 829, 0, 0, 0, 0, 883, 875, 0, 0, 0, 0, 885, 919, 0, 0, 0, 0, 885, 961, 0, 0, 0, 0, 884, 1003, 0, 0, 0, 0, 961, 1016, 0, 0, 0, 0, 1058, 1001, 0, 0, 0, 0, 1059, 961, 0, 0, 0, 0, 1058, 918, 0, 0, 0, 0, 1059, 873, 0, 0, 0, 0, 1046, 830, 0, 0, 0, 0, 1045, 792, 0, 0, 0, 0, 1045, 747, 0, 0, 0, 0, 1045, 701, 0, 0, 0, 0, 1044, 657, 0, 0, 0, 0, 1045, 624, 0, 0, 0, 0, 1090, 608, 0, 0, 0, 0, 1134, 608, 0, 0, 0, 0, 1177, 607, 0, 0, 0, 0, 1217, 607, 0, 0, 0, 0, 1262, 607, 0, 0, 0, 0, 1304, 609, 0, 0, 0, 0, 1346, 608, 0, 0, 0, 0, 1387, 610, 0, 0, 0, 0, 1427, 609, 0, 0, 0, 0, 1434, 549, 0, 0, 0, 0, 1427, 436, 0, 0, 0, 0, 1383, 434, 0, 0, 0, 0, 1336, 435, 0, 0, 0, 0, 1294, 434, 0, 0, 0, 0, 1255, 436, 0, 0, 0, 0, 1216, 435, 0, 0, 0, 0, 1172, 435, 0, 0, 0, 0, 1130, 435, 0, 0, 0, 0, 1085, 436, 0, 0, 0, 0, 1045, 438, 0, 0, 0, 0, 1045, 392, 0, 0, 0, 0, 1045, 347, 0, 0, 0, 0, 1048, 305, 0, 0, 0, 0, 1048, 264, 0, 0, 0, 0, 1050, 220, 0, 0, 0, 0, 1047, 178, 0, 0, 0, 0, 1045, 134, 0, 0, 0, 0, 1046, 92, 0, 0, 0, 0, 1045, 47, 0, 0, 0, 0, 963, 47, 0, 0, 0, 0, 964, 100, 0, 0, 0, 0, 963, 145, 0, 0, 0, 0, 963, 189, 0, 0, 0, 0, 962, 233, 0, 0, 0, 0, 962, 275, 0, 0, 0, 0, 962, 318, 0, 0, 0, 0, 962, 367, 0, 0, 0, 0, 961, 408, 0, 0, 0, 0, 960, 450, 0, 0, 0, 0, 961, 506)
+}
+point_count = 86
+
+[sub_resource type="Curve2D" id="Curve2D_3ehl5"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1250, 431, 0, 0, 0, 0, 1208, 429, 0, 0, 0, 0, 1164, 427, 0, 0, 0, 0, 1123, 429, 0, 0, 0, 0, 1078, 428, 0, 0, 0, 0, 1039, 432, 0, 0, 0, 0, 1037, 384, 0, 0, 0, 0, 1037, 342, 0, 0, 0, 0, 1037, 300, 0, 0, 0, 0, 1038, 256, 0, 0, 0, 0, 1040, 214, 0, 0, 0, 0, 1036, 172, 0, 0, 0, 0, 1035, 123, 0, 0, 0, 0, 1033, 83, 0, 0, 0, 0, 1035, 39, 0, 0, 0, 0, 953, 39, 0, 0, 0, 0, 863, 40, 0, 0, 0, 0, 862, 85, 0, 0, 0, 0, 863, 127, 0, 0, 0, 0, 864, 171, 0, 0, 0, 0, 866, 221, 0, 0, 0, 0, 865, 268, 0, 0, 0, 0, 864, 312, 0, 0, 0, 0, 864, 355, 0, 0, 0, 0, 864, 400, 0, 0, 0, 0, 865, 445, 0, 0, 0, 0, 821, 445, 0, 0, 0, 0, 778, 445, 0, 0, 0, 0, 734, 444, 0, 0, 0, 0, 688, 444, 0, 0, 0, 0, 648, 444, 0, 0, 0, 0, 602, 443, 0, 0, 0, 0, 561, 442, 0, 0, 0, 0, 516, 442, 0, 0, 0, 0, 475, 446, 0, 0, 0, 0, 474, 532, 0, 0, 0, 0, 475, 616, 0, 0, 0, 0, 522, 617, 0, 0, 0, 0, 565, 616, 0, 0, 0, 0, 604, 616, 0, 0, 0, 0, 647, 614, 0, 0, 0, 0, 691, 611, 0, 0, 0, 0, 735, 611, 0, 0, 0, 0, 779, 612, 0, 0, 0, 0, 820, 612, 0, 0, 0, 0, 862, 617, 0, 0, 0, 0, 864, 650, 0, 0, 0, 0, 865, 692, 0, 0, 0, 0, 865, 739, 0, 0, 0, 0, 867, 782, 0, 0, 0, 0, 869, 822, 0, 0, 0, 0, 873, 865, 0, 0, 0, 0, 875, 911, 0, 0, 0, 0, 877, 956, 0, 0, 0, 0, 873, 994, 0, 0, 0, 0, 952, 1008, 0, 0, 0, 0, 1048, 994, 0, 0, 0, 0, 1049, 955, 0, 0, 0, 0, 1049, 910, 0, 0, 0, 0, 1048, 868, 0, 0, 0, 0, 1038, 821, 0, 0, 0, 0, 1036, 780, 0, 0, 0, 0, 1036, 738, 0, 0, 0, 0, 1032, 692, 0, 0, 0, 0, 1033, 650, 0, 0, 0, 0, 1035, 617, 0, 0, 0, 0, 1080, 601, 0, 0, 0, 0, 1119, 600, 0, 0, 0, 0, 1160, 600, 0, 0, 0, 0, 1205, 601, 0, 0, 0, 0, 1244, 600, 0, 0, 0, 0, 1291, 600, 0, 0, 0, 0, 1338, 600, 0, 0, 0, 0, 1380, 602, 0, 0, 0, 0, 1417, 603, 0, 0, 0, 0, 1424, 537, 0, 0, 0, 0, 1384, 534, 0, 0, 0, 0, 1339, 535, 0, 0, 0, 0, 1298, 533, 0, 0, 0, 0, 1252, 535, 0, 0, 0, 0, 1209, 534, 0, 0, 0, 0, 1170, 535, 0, 0, 0, 0, 1124, 534, 0, 0, 0, 0, 1079, 534, 0, 0, 0, 0, 1036, 535, 0, 0, 0, 0, 985, 534)
+}
+point_count = 86
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_6tbfo")
+exVar = 6
+
+[node name="Undefined-Imgur" type="Sprite2D" parent="."]
+position = Vector2(958, 545.5)
+scale = Vector2(0.746875, 0.746528)
+texture = ExtResource("1_g11af")
+
+[node name="Wrapper(1)" type="Sprite2D" parent="."]
+position = Vector2(973, 591)
+scale = Vector2(1.88999, 1.60386)
+texture = ExtResource("2_03jkc")
+
+[node name="Img-20230528-wa0020" type="Sprite2D" parent="."]
+position = Vector2(959, 537)
+scale = Vector2(1.0181, 1.02381)
+texture = ExtResource("3_yd4ua")
+
+[node name="player" type="CharacterBody2D" parent="."]
+visible = false
+script = ExtResource("2_f71fh")
+
+[node name="anim" type="AnimatedSprite2D" parent="player"]
+z_index = 3
+y_sort_enabled = true
+position = Vector2(560, 187)
+sprite_frames = SubResource("SpriteFrames_84lv6")
+animation = &"Icon"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+shape = SubResource("CapsuleShape2D_qsyym")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/StaticBody2D"]
+shape = SubResource("CapsuleShape2D_srolj")
+
+[node name="Placeholder" type="Sprite2D" parent="."]
+position = Vector2(547, 340)
+scale = Vector2(0.213333, 0.213333)
+texture = ExtResource("5_30h3p")
+
+[node name="Placeholder3" type="Sprite2D" parent="."]
+position = Vector2(1397, 335)
+rotation = 3.14159
+scale = Vector2(0.213333, 0.213333)
+texture = ExtResource("5_30h3p")
+
+[node name="Placeholder5" type="Sprite2D" parent="."]
+position = Vector2(1406, 740)
+rotation = 3.14159
+scale = Vector2(0.213333, 0.213333)
+texture = ExtResource("5_30h3p")
+
+[node name="Placeholder4" type="Sprite2D" parent="."]
+position = Vector2(547, 747)
+scale = Vector2(0.213333, 0.213333)
+texture = ExtResource("5_30h3p")
+
+[node name="DiceRoll" type="AnimatedSprite2D" parent="."]
+position = Vector2(572, 747)
+scale = Vector2(0.292879, 0.292879)
+sprite_frames = SubResource("SpriteFrames_6yfpv")
+animation = &"DiceRoll"
+
+[node name="Dice" type="AnimatedSprite2D" parent="."]
+position = Vector2(573, 748)
+scale = Vector2(0.144081, 0.144081)
+sprite_frames = SubResource("SpriteFrames_6yfpv")
+animation = &"Dice"
+
+[node name="Button" type="Button" parent="Dice"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_right = 0.230769
+anchor_bottom = 0.230769
+offset_left = -201.275
+offset_top = -180.455
+offset_right = 34.7246
+offset_bottom = 55.5451
+metadata/_edit_use_anchors_ = true
+
+[node name="Blue" type="Path2D" parent="."]
+position = Vector2(1, 1)
+curve = SubResource("Curve2D_4feg1")
+script = ExtResource("46_ksk1k")
+
+[node name="B1" parent="Blue" instance=ExtResource("47_vpqs8")]
+position = Vector2(754.053, 714.947)
+rotation = 0.0227234
+scale = Vector2(0.07, 0.07)
+region_rect = Rect2(4, 7, 361, 511)
+
+[node name="Button" type="Button" parent="Blue/B1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -208.0
+offset_top = -271.0
+offset_right = 208.0
+offset_bottom = 274.0
+metadata/_edit_use_anchors_ = true
+
+[node name="B2" parent="Blue" instance=ExtResource("47_vpqs8")]
+position = Vector2(667.1, 806.993)
+rotation = 0.0227234
+scale = Vector2(0.07, 0.07)
+
+[node name="Button2" type="Button" parent="Blue/B2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -220.0
+offset_top = -236.0
+offset_right = 235.0
+offset_bottom = 266.0
+metadata/_edit_use_anchors_ = true
+
+[node name="B3" parent="Blue" instance=ExtResource("47_vpqs8")]
+position = Vector2(753.102, 808.948)
+rotation = 0.0227234
+scale = Vector2(0.07, 0.07)
+
+[node name="Button3" type="Button" parent="Blue/B3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -192.0
+offset_top = -281.0
+offset_right = 209.0
+offset_bottom = 279.0
+metadata/_edit_use_anchors_ = true
+
+[node name="B4" parent="Blue" instance=ExtResource("47_vpqs8")]
+position = Vector2(669.054, 716.992)
+rotation = 0.0227234
+scale = Vector2(0.07, 0.07)
+
+[node name="Button4" type="Button" parent="Blue/B4"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -234.0
+offset_top = -279.0
+offset_right = 213.0
+offset_bottom = 264.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="Blue"]
+one_shot = true
+
+[node name="Red" type="Path2D" parent="."]
+scale = Vector2(0.998385, 0.998623)
+curve = SubResource("Curve2D_ppu6u")
+script = ExtResource("48_tpk7s")
+
+[node name="R1" parent="Red" instance=ExtResource("48_1rabs")]
+position = Vector2(1156.09, 736.704)
+rotation = -0.0401464
+scale = Vector2(0.07, 0.07)
+
+[node name="Button" type="Button" parent="Red/R1"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.336843
+anchor_top = -0.356154
+anchor_right = 15.5284
+anchor_bottom = 15.2339
+offset_left = -87.0313
+offset_top = -94.0875
+offset_right = 88.9688
+offset_bottom = 96.9125
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="R2" parent="Red" instance=ExtResource("48_1rabs")]
+position = Vector2(1239.02, 824.702)
+rotation = 0.0506137
+scale = Vector2(0.07, 0.07)
+
+[node name="Button2" type="Button" parent="Red/R2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -199.0
+offset_top = -277.0
+offset_right = 5818.0
+offset_bottom = 7780.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="R3" parent="Red" instance=ExtResource("48_1rabs")]
+position = Vector2(1152.97, 825.655)
+rotation = -0.0401464
+scale = Vector2(0.07, 0.07)
+
+[node name="Button3" type="Button" parent="Red/R3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -192.0
+offset_top = -255.0
+offset_right = 5263.0
+offset_bottom = 7153.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="R4" parent="Red" instance=ExtResource("48_1rabs")]
+position = Vector2(1240.06, 738.704)
+rotation = 0.0506137
+scale = Vector2(0.07, 0.07)
+
+[node name="Button4" type="Button" parent="Red/R4"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -194.0
+offset_top = -275.0
+offset_right = 5555.0
+offset_bottom = 7632.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="Red"]
+one_shot = true
+
+[node name="Green" type="Path2D" parent="."]
+curve = SubResource("Curve2D_lo3fk")
+script = ExtResource("50_776qp")
+
+[node name="G1" parent="Green" instance=ExtResource("49_nv0lk")]
+position = Vector2(757, 336)
+rotation = -0.0399823
+scale = Vector2(0.07, 0.07)
+
+[node name="Button" type="Button" parent="Green/G1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -200.0
+offset_top = -293.0
+offset_right = 5407.0
+offset_bottom = 8132.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="G2" parent="Green" instance=ExtResource("49_nv0lk")]
+position = Vector2(670, 250.001)
+rotation = -0.0399823
+scale = Vector2(0.07, 0.07)
+
+[node name="Button2" type="Button" parent="Green/G2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -206.0
+offset_top = -262.0
+offset_right = 5639.0
+offset_bottom = 7607.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="G3" parent="Green" instance=ExtResource("49_nv0lk")]
+position = Vector2(759, 250)
+rotation = -0.0399823
+scale = Vector2(0.07, 0.07)
+
+[node name="Button3" type="Button" parent="Green/G3"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.334468
+anchor_top = -0.382672
+anchor_right = 15.0747
+anchor_bottom = 14.5011
+offset_left = -90.5813
+offset_top = -93.0974
+offset_right = 85.4187
+offset_bottom = 97.9026
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="G4" parent="Green" instance=ExtResource("49_nv0lk")]
+position = Vector2(671, 334)
+rotation = -0.0399823
+scale = Vector2(0.07, 0.07)
+
+[node name="Button4" type="Button" parent="Green/G4"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -207.0
+offset_top = -281.0
+offset_right = 5612.0
+offset_bottom = 7513.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="Green"]
+one_shot = true
+
+[node name="Yellow" type="Path2D" parent="."]
+position = Vector2(10, 8)
+curve = SubResource("Curve2D_3ehl5")
+script = ExtResource("52_c77rj")
+
+[node name="Y1" parent="Yellow" instance=ExtResource("50_q3st6")]
+position = Vector2(1137.1, 234.363)
+scale = Vector2(0.07, 0.07)
+
+[node name="Button" type="Button" parent="Yellow/Y1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -209.0
+offset_top = -288.0
+offset_right = 5718.0
+offset_bottom = 7776.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="Y2" parent="Yellow" instance=ExtResource("50_q3st6")]
+position = Vector2(1228.41, 318.933)
+rotation = -0.17233
+scale = Vector2(0.07, 0.07)
+
+[node name="Button2" type="Button" parent="Yellow/Y2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -234.0
+offset_top = -290.0
+offset_right = 5957.0
+offset_bottom = 7709.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="Y3" parent="Yellow" instance=ExtResource("50_q3st6")]
+position = Vector2(1142.52, 323.204)
+scale = Vector2(0.07, 0.07)
+
+[node name="Button3" type="Button" parent="Yellow/Y3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -202.0
+offset_top = -280.0
+offset_right = 5680.0
+offset_bottom = 7354.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="Y4" parent="Yellow" instance=ExtResource("50_q3st6")]
+position = Vector2(1223.04, 231.091)
+rotation = 0.000460383
+scale = Vector2(0.07, 0.07)
+
+[node name="Button4" type="Button" parent="Yellow/Y4"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -197.0
+offset_top = -294.0
+offset_right = 5300.0
+offset_bottom = 7998.0
+scale = Vector2(0.07, 0.07)
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="Yellow"]
+process_callback = 0
+one_shot = true
+
+[connection signal="animation_finished" from="DiceRoll" to="." method="_on_DiceRoll_animation_finished"]
+[connection signal="pressed" from="Dice/Button" to="." method="_on_Dice_pressed"]
+[connection signal="outBoxBlue" from="Blue" to="." method="_on_blue_out_box_blue"]
+[connection signal="playDoneBlue" from="Blue" to="." method="_on_playDoneBlue"]
+[connection signal="pressed" from="Blue/B1/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Blue/B2/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Blue/B3/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Blue/B4/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="timeout" from="Blue/Timer" to="Blue" method="_on_timer_timeout"]
+[connection signal="outBoxRed" from="Red" to="." method="_on_red_out_box_red"]
+[connection signal="playDoneRed" from="Red" to="." method="_on_red_play_done_red"]
+[connection signal="pressed" from="Red/R1/Button" to="." method="_on_R1_pressed"]
+[connection signal="pressed" from="Red/R2/Button2" to="." method="_on_R2_pressed"]
+[connection signal="pressed" from="Red/R3/Button3" to="." method="_on_R3_pressed"]
+[connection signal="pressed" from="Red/R4/Button4" to="." method="_on_R4_pressed"]
+[connection signal="timeout" from="Red/Timer" to="Red" method="_on_timer_timeout"]
+[connection signal="outBoxGreen" from="Green" to="." method="_on_green_out_box_green"]
+[connection signal="playDoneGreen" from="Green" to="." method="_on_green_play_done_green"]
+[connection signal="pressed" from="Green/G1/Button" to="." method="_on_G1_pressed"]
+[connection signal="pressed" from="Green/G2/Button2" to="." method="_on_G2_pressed"]
+[connection signal="pressed" from="Green/G3/Button3" to="." method="_on_G3_pressed"]
+[connection signal="pressed" from="Green/G4/Button4" to="." method="_on_G4_pressed"]
+[connection signal="timeout" from="Green/Timer" to="Green" method="_on_timer_timeout"]
+[connection signal="outBoxYellow" from="Yellow" to="." method="_on_yellow_out_box_yellow"]
+[connection signal="playDoneYellow" from="Yellow" to="." method="_on_yellow_play_done_yellow"]
+[connection signal="pressed" from="Yellow/Y1/Button" to="." method="_on_Y1_pressed"]
+[connection signal="pressed" from="Yellow/Y2/Button2" to="." method="_on_Y2_pressed"]
+[connection signal="pressed" from="Yellow/Y3/Button3" to="." method="_on_Y3_pressed"]
+[connection signal="pressed" from="Yellow/Y4/Button4" to="." method="_on_Y4_pressed"]
+[connection signal="timeout" from="Yellow/Timer" to="Yellow" method="_on_timer_timeout"]
