@@ -71,6 +71,22 @@ func kill_player():
 		if reset == 0:
 			emit_signal("playDoneRed",playerPos,playerTurn,diceFace,1,set[0])
 		else:
-			emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null)
+			if winCheck() == 1:
+				emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null,1)
+			else:
+				emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null,0)
 	else:
-		emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null)
+		if winCheck() == 1:
+			emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null,1)
+		else:
+			emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null,0)
+func winCheck():
+	if playerwin[0] == 1:
+		if playerwin[1] == 1:
+			if playerwin[2] == 1:
+				if playerwin[3] == 1:
+					return 1
+				else: return 0
+			else: return 0
+		else: return 0
+	else: return 0
