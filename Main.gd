@@ -76,11 +76,10 @@ func _on_playDoneBlue(playerPose,x,DiceFace,chkkill,killPose):
 	globPos[x] += DiceFace
 	worldPose[x] = playerPose
 	
-func _on_red_play_done_red(x,DiceFace,chkkill,killPose):
+func _on_red_play_done_red(playerPose,x,DiceFace,chkkill,killPose):
 	playerRun[1] = 0
 	if chkkill == 1:
 		player_kill(killPose)
-	playerRun[1] = 0
 	if DiceFace == 6:
 		turn = 2
 	else:
@@ -91,7 +90,7 @@ func _on_red_play_done_red(x,DiceFace,chkkill,killPose):
 		$DiceRoll.position.y=dicePose[5]
 	globPos[x+4] += DiceFace
 
-func _on_yellow_play_done_yellow(x,DiceFace,chkkill,killPose):
+func _on_yellow_play_done_yellow(playerPose,x,DiceFace,chkkill,killPose):
 	playerRun[2] = 0
 	if chkkill == 1:
 		player_kill(killPose)
@@ -105,7 +104,7 @@ func _on_yellow_play_done_yellow(x,DiceFace,chkkill,killPose):
 		$DiceRoll.position.y=dicePose[7]
 	globPos[x+8] += DiceFace
 
-func _on_green_play_done_green(x,DiceFace,chkkill,killPose):
+func _on_green_play_done_green(playerPose,x,DiceFace,chkkill,killPose):
 	playerRun[3] = 0
 	if chkkill == 1:
 		player_kill(killPose)

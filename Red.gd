@@ -19,19 +19,19 @@ func playRun(x,y,globPos):
 	localPose = globPos
 	var finalPose = playerPos[x] +y
 	if playerRun[x] == 1 :
-		if finalPose < 86:
-			diceFace = y
-			playerTurn = x
-			initialPos = playerPos[x]
-			playerPos[x] = playerPos[x] + y
-			chk_time()
-		if finalPose == 86:
-			diceFace = y
-			playerTurn = x
-			initialPos = playerPos[x]
-			playerPos[x] = playerPos[x] + y
-			winPose[x] =  1
-			chk_time()
+	# 	if finalPose < 86:
+	# 		diceFace = y
+	# 		playerTurn = x
+	# 		initialPos = playerPos[x]
+	# 		playerPos[x] = playerPos[x] + y
+	# 		chk_time()
+	# 	if finalPose == 86:
+		diceFace = y
+		playerTurn = x
+		initialPos = playerPos[x]
+		playerPos[x] = playerPos[x] + y
+		winPose[x] =  1
+		chk_time()
 	elif y == 6:
 		var curvP = get_curve().get_point_position(0)
 		playerPath[x].position.x = curvP.x
@@ -44,7 +44,7 @@ func chk_time():
 	var curvP = get_curve().get_point_position(initialPos)
 	playerPath[playerTurn].position.x = curvP.x
 	playerPath[playerTurn].position.y = curvP.y
-	$Timer.start(0.5)
+	$Timer.start(0.2)
 	
 func _on_timer_timeout():
 	$Timer.stop()
