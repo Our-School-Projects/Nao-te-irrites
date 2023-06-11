@@ -9,6 +9,7 @@ var playerTurn = 0
 var initialPos = 0
 var playerDie = [1,11,16,21,31,36,41,51,56,61,71,76]
 var localPose = []
+var winPose = [0,0,0,0]
 @onready var playerPath = [$R1,$R2,$R3,$R4]
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,12 +17,21 @@ func _ready():
 	
 func playRun(x,y,globPos):
 	localPose = globPos
+	var finalPose = playerPos[x] +y
 	if playerRun[x] == 1 :
-		diceFace = y
-		playerTurn = x
-		initialPos = playerPos[x]
-		playerPos[x] = playerPos[x] + y
-		chk_time()
+		if finalPose < 86:
+			diceFace = y
+			playerTurn = x
+			initialPos = playerPos[x]
+			playerPos[x] = playerPos[x] + y
+			chk_time()
+		if finalPose == 86:
+			diceFace = y
+			playerTurn = x
+			initialPos = playerPos[x]
+			playerPos[x] = playerPos[x] + y
+			winPose[x] =  1
+			chk_time()
 	elif y == 6:
 		var curvP = get_curve().get_point_position(0)
 		playerPath[x].position.x = curvP.x
@@ -29,7 +39,7 @@ func playRun(x,y,globPos):
 		playerRun[x] = 1
 		emit_signal("outBoxRed",x,1)
 		
-func chk_time():
+func chk_time(): 
 	initialPos += 1
 	var curvP = get_curve().get_point_position(initialPos)
 	playerPath[playerTurn].position.x = curvP.x
