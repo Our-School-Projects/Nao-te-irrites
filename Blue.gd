@@ -19,13 +19,13 @@ func playRun(x,y,globPos):
 	localPose = globPos
 	var finalPose = playerPos[x] +y
 	if playerRun[x] == 1 :
-		# if finalPose < 86:
-		# 	diceFace = y
-		# 	playerTurn = x
-		# 	initialPos = playerPos[x]
-		# 	playerPos[x] = playerPos[x] + y
-		# 	chk_time()
-		# if finalPose == 86:
+	# 	if finalPose < 86:
+	# 		diceFace = y
+	# 		playerTurn = x
+	# 		initialPos = playerPos[x]
+	# 		playerPos[x] = playerPos[x] + y
+	# 		chk_time()
+	# 	if finalPose == 86:
 		diceFace = y
 		playerTurn = x
 		initialPos = playerPos[x]
@@ -69,24 +69,8 @@ func kill_player():
 			if set[0] == loadPlayer[y]:
 				reset = 1
 		if reset == 0:
-			emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,1,set[0],0)
+			emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,1,set[0])
 		else:
-			if winCheck() == 1:
-				emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null,1)
-			else:
-				emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null,0)
+			emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null)
 	else:
-		if winCheck() == 1:
-			emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null,1)
-		else:
-			emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null,0)
-func winCheck():
-	if playerwin[0] == 1:
-		if playerwin[1] == 1:
-			if playerwin[2] == 1:
-				if playerwin[3] == 1:
-					return 1
-				else: return 0
-			else: return 0
-		else: return 0
-	else: return 0
+		emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null)
