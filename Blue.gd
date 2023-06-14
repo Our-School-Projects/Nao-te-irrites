@@ -74,3 +74,5 @@ func kill_player():
 			emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null)
 	else:
 		emit_signal("playDoneBlue",playerPos,playerTurn,diceFace,0,null)
+func a():
+	
