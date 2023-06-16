@@ -59,18 +59,25 @@ func kill_player():
 	var reset = 0
 	if playerDie.find(playerPos[playerTurn]) != -1:
 		dieTrue = 1
+		print("condição1")
 	if dieTrue == 0:
 		for x in localPose.size():
 			if playerPos[playerTurn] == localPose[x]:
 				set.append(x)
+				print("Condição2")
 	var loadPlayer = [0,1,2,3]
 	if set.size() ==1:
 		for y in loadPlayer.size():
 			if set[0] == loadPlayer[y]:
 				reset = 1
+				print("condição3")
 		if reset == 0:
 			emit_signal("playDoneRed",playerPos,playerTurn,diceFace,1,set[0])
+			print("condição4")
 		else:
 			emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null)
+			print("condição4")
 	else:
+		print("condição6")
 		emit_signal("playDoneRed",playerPos,playerTurn,diceFace,0,null)
+		
