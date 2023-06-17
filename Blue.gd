@@ -57,7 +57,6 @@ func kill_player():
 	var set = []
 	var dieTrue = 0
 	var reset = 0
-	playerPos[playerTurn] = localPose
 	if playerDie.find(playerPos[playerTurn]) != -1:
 		dieTrue = 1
 		print("condição1")
