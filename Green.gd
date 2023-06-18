@@ -69,8 +69,11 @@ func kill_player():
 			if set[0] == loadPlayer[y]:
 				reset = 1
 		if reset == 0:
+			print("condição1")
 			emit_signal("playDoneGreen",playerPos,playerTurn,diceFace,1,set[0])
 		else:
+			print("condição2")
 			emit_signal("playDoneGreen",playerPos,playerTurn,diceFace,0,null)
 	else:
+		print("condição3")
 		emit_signal("playDoneGreen",playerPos,playerTurn,diceFace,0,null)

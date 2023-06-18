@@ -1,0 +1,3 @@
+Sobre as mortes:
+
+A função de morte funciona, porém, de forma errada. Se o azul para por cima do verde, quem volta é o vermelho
