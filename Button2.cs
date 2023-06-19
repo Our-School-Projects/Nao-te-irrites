@@ -11,7 +11,7 @@ public partial class Button2 : Button
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	
 	public override void _Pressed(){
-		GetTree().ChangeSceneToFile("res://node_2d.tscn");
+		GetTree().ChangeSceneToFile("res://quatro_jogadores .tscn");
 	}
 }
 

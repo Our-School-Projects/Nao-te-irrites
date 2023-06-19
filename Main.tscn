@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://c735lyvln0sbq" path="res://undefined - Imgur.jpg" id="1_bu3w7"]
 [ext_resource type="Texture2D" uid="uid://b6laxrd7ojliy" path="res://background block.png" id="2_snl3c"]
 [ext_resource type="Texture2D" uid="uid://c7q1tq1oeh4bm" path="res://wrapper.png" id="3_ix6hf"]
-[ext_resource type="Script" path="res://check.cs" id="3_vhb3x"]
 [ext_resource type="Texture2D" uid="uid://ddhgitru6uo6x" path="res://Back.png" id="4_f5m5d"]
 [ext_resource type="Script" path="res://sair.cs" id="5_ffaib"]
 [ext_resource type="Texture2D" uid="uid://bee0fv1ak14uq" path="res://Controls.png" id="5_jkqcm"]
@@ -14,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dt8dh3n2628eg" path="res://Key map.png" id="9_81fi1"]
 [ext_resource type="Texture2D" uid="uid://4ywk5edh1i5p" path="res://Jogadores.png" id="9_tfqay"]
 [ext_resource type="Texture2D" uid="uid://crsh7jcu1pnpv" path="res://Key map (1).png" id="10_kj4g1"]
+[ext_resource type="Script" path="res://Menu.cs" id="12_e5nhb"]
 [ext_resource type="Texture2D" uid="uid://bdq6d22k85g3l" path="res://Key map (3).png" id="15_ivmhf"]
 [ext_resource type="Texture2D" uid="uid://dgq7krkmowuhc" path="res://Key map (2).png" id="16_ocql2"]
 [ext_resource type="Texture2D" uid="uid://htquod8st8tr" path="res://Rectangle 1.png" id="17_vhkak"]
@@ -122,15 +122,77 @@ texture = ExtResource("9_tfqay")
 position = Vector2(-534, -335)
 texture = ExtResource("7_0c7kq")
 
-[node name="Wrapper(1)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+[node name="Menu" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
 position = Vector2(296, 105)
 texture = ExtResource("8_ghhel")
+script = ExtResource("12_e5nhb")
 
-[node name="KeyMap" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)"]
+[node name="Node" type="Node" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu"]
+
+[node name="Label" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node"]
+offset_left = 1062.0
+offset_top = 373.0
+offset_right = 1102.0
+offset_bottom = 396.0
+theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
+theme_override_font_sizes/font_size = 35
+text = "2"
+
+[node name="CheckBox" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node/Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.231
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 13.988
+scale = Vector2(2, 2)
+disabled = true
+button_pressed = true
+
+[node name="Label2" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node"]
+offset_left = 1190.0
+offset_top = 373.0
+offset_right = 1230.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
+theme_override_font_sizes/font_size = 35
+text = "3"
+
+[node name="CheckBox2" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node/Label2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.231
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 13.988
+scale = Vector2(2, 2)
+
+[node name="Label3" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node"]
+offset_left = 1340.0
+offset_top = 373.0
+offset_right = 1380.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
+theme_override_font_sizes/font_size = 35
+text = "4"
+
+[node name="CheckBox3" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node/Label3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.231
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 13.988
+scale = Vector2(2, 2)
+
+[node name="Jogador1" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu"]
 position = Vector2(3, -180)
 texture = ExtResource("9_81fi1")
 
-[node name="Control" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap"]
+[node name="Control" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador1"]
 layout_mode = 3
 anchor_left = 0.105
 anchor_top = 0.5
@@ -141,7 +203,7 @@ offset_top = -63.5
 offset_right = 280.225
 offset_bottom = -5.5
 
-[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap/Control"]
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador1/Control"]
 clip_contents = true
 layout_mode = 1
 anchors_preset = -1
@@ -154,11 +216,11 @@ theme_override_font_sizes/font_size = 35
 placeholder_text = "Jogador 1"
 metadata/_edit_use_anchors_ = true
 
-[node name="KeyMap(1)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)"]
+[node name="Jogador2" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu"]
 position = Vector2(3, -105)
 texture = ExtResource("10_kj4g1")
 
-[node name="Control2" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap(1)"]
+[node name="Control2" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador2"]
 layout_mode = 3
 anchor_left = 0.116
 anchor_top = 0.5
@@ -169,7 +231,7 @@ offset_top = -55.5
 offset_right = 271.82
 offset_bottom = 2.5
 
-[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/KeyMap(1)/Control2"]
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador2/Control2"]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.0344833
@@ -183,74 +245,12 @@ placeholder_text = "Jogador 2"
 wrap_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Node" type="Node" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)"]
-
-[node name="Label" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node"]
-offset_left = 1062.0
-offset_top = 373.0
-offset_right = 1102.0
-offset_bottom = 396.0
-theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
-theme_override_font_sizes/font_size = 35
-text = "2"
-
-[node name="CheckBox" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node/Label"]
-layout_mode = 1
-anchors_preset = -1
-anchor_bottom = 0.231
-offset_left = 21.0
-offset_top = 2.0
-offset_right = 45.0
-offset_bottom = 13.988
-scale = Vector2(2, 2)
-disabled = true
-button_pressed = true
-
-[node name="Label2" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node"]
-offset_left = 1190.0
-offset_top = 373.0
-offset_right = 1230.0
-offset_bottom = 425.0
-theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
-theme_override_font_sizes/font_size = 35
-text = "3"
-
-[node name="CheckBox2" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node/Label2"]
-layout_mode = 1
-anchors_preset = -1
-anchor_bottom = 0.231
-offset_left = 21.0
-offset_top = 2.0
-offset_right = 45.0
-offset_bottom = 13.988
-scale = Vector2(2, 2)
-
-[node name="Label3" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node"]
-offset_left = 1340.0
-offset_top = 373.0
-offset_right = 1380.0
-offset_bottom = 425.0
-theme_override_colors/font_color = Color(0.560784, 0.560784, 0.564706, 1)
-theme_override_font_sizes/font_size = 35
-text = "4"
-
-[node name="CheckBox3" type="CheckBox" parent="Panel/Undefined-Imgur/BackgroundBlock/Wrapper(1)/Node/Label3"]
-layout_mode = 1
-anchors_preset = -1
-anchor_bottom = 0.231
-offset_left = 21.0
-offset_top = 2.0
-offset_right = 45.0
-offset_bottom = 13.988
-scale = Vector2(2, 2)
-script = ExtResource("3_vhb3x")
-
-[node name="KeyMap3" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+[node name="Jogador3" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu"]
 visible = false
-position = Vector2(302, 81.0003)
+position = Vector2(6, -23.9997)
 texture = ExtResource("15_ivmhf")
 
-[node name="Control2" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap3"]
+[node name="Control2" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador3"]
 layout_mode = 3
 anchor_left = 0.105
 anchor_top = 0.5
@@ -261,7 +261,7 @@ offset_top = -60.5001
 offset_right = 277.225
 offset_bottom = -2.50006
 
-[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap3/Control2"]
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador3/Control2"]
 clip_contents = true
 layout_mode = 1
 anchors_preset = -1
@@ -276,12 +276,12 @@ theme_override_font_sizes/font_size = 35
 placeholder_text = "Jogador 3"
 metadata/_edit_use_anchors_ = true
 
-[node name="KeyMap(2)" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
+[node name="Jogador4" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu"]
 visible = false
-position = Vector2(296, 159)
+position = Vector2(0, 54)
 texture = ExtResource("16_ocql2")
 
-[node name="Control3" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap(2)"]
+[node name="Control3" type="Control" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador4"]
 layout_mode = 3
 anchor_left = 0.105
 anchor_top = 0.5
@@ -292,7 +292,7 @@ offset_top = -64.5
 offset_right = 281.225
 offset_bottom = -6.5
 
-[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/KeyMap(2)/Control3"]
+[node name="TextEdit" type="TextEdit" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Jogador4/Control3"]
 clip_contents = true
 layout_mode = 1
 anchors_preset = -1
@@ -307,12 +307,12 @@ theme_override_font_sizes/font_size = 35
 placeholder_text = "Jogador 4"
 metadata/_edit_use_anchors_ = true
 
-[node name="Rectangle1" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock"]
-position = Vector2(635.001, 376.001)
+[node name="Botao" type="Sprite2D" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu"]
+position = Vector2(339.001, 271.001)
 scale = Vector2(0.462613, 0.671876)
 texture = ExtResource("17_vhkak")
 
-[node name="Button2" type="Button" parent="Panel/Undefined-Imgur/BackgroundBlock/Rectangle1"]
+[node name="Button2" type="Button" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Botao"]
 offset_left = -303.0
 offset_top = -63.0
 offset_right = 274.0
@@ -322,10 +322,13 @@ action_mode = 0
 flat = true
 script = ExtResource("18_d7e16")
 
-[node name="Label" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Rectangle1"]
+[node name="Label" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Botao"]
 offset_left = -108.082
 offset_top = -58.0465
 offset_right = 129.918
 offset_bottom = 47.9535
 theme_override_font_sizes/font_size = 75
 text = "Jogar"
+
+[connection signal="toggled" from="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node/Label2/CheckBox2" to="Panel/Undefined-Imgur/BackgroundBlock/Menu" method="_on_check_box_2_toggled"]
+[connection signal="toggled" from="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node/Label3/CheckBox3" to="Panel/Undefined-Imgur/BackgroundBlock/Menu" method="_on_check_box_3_toggled"]

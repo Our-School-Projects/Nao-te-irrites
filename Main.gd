@@ -213,3 +213,4 @@ func player_kill(x):
 	var pathPlayer = [$Blue/B1,$Blue/B2,$Blue/B3,$Blue/B4,$Red/R1,$Red/R2,$Red/R3,$Red/R4,$Yellow/Y1,$Yellow/Y2,$Yellow/Y3,$Yellow/Y4,$Green/G1,$Green/G2,$Green/G3,$Green/G4]
 	pathPlayer[x].position.x = iniPose[x*2]
 	pathPlayer[x].position.y = iniPose[(x*2)+1]
+
