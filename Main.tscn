@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cd16to24qw0ky"]
+[gd_scene load_steps=18 format=3 uid="uid://cd16to24qw0ky"]
 
 [ext_resource type="Texture2D" uid="uid://c735lyvln0sbq" path="res://undefined - Imgur.jpg" id="1_bu3w7"]
 [ext_resource type="Texture2D" uid="uid://b6laxrd7ojliy" path="res://background block.png" id="2_snl3c"]
@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://bdq6d22k85g3l" path="res://Key map (3).png" id="15_ivmhf"]
 [ext_resource type="Texture2D" uid="uid://dgq7krkmowuhc" path="res://Key map (2).png" id="16_ocql2"]
 [ext_resource type="Texture2D" uid="uid://htquod8st8tr" path="res://Rectangle 1.png" id="17_vhkak"]
-[ext_resource type="Script" path="res://Button2.cs" id="18_d7e16"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -320,7 +319,6 @@ offset_bottom = 61.0
 mouse_default_cursor_shape = 2
 action_mode = 0
 flat = true
-script = ExtResource("18_d7e16")
 
 [node name="Label" type="Label" parent="Panel/Undefined-Imgur/BackgroundBlock/Menu/Botao"]
 offset_left = -108.082
@@ -332,3 +330,4 @@ text = "Jogar"
 
 [connection signal="toggled" from="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node/Label2/CheckBox2" to="Panel/Undefined-Imgur/BackgroundBlock/Menu" method="_on_check_box_2_toggled"]
 [connection signal="toggled" from="Panel/Undefined-Imgur/BackgroundBlock/Menu/Node/Label3/CheckBox3" to="Panel/Undefined-Imgur/BackgroundBlock/Menu" method="_on_check_box_3_toggled"]
+[connection signal="pressed" from="Panel/Undefined-Imgur/BackgroundBlock/Menu/Botao/Button2" to="Panel/Undefined-Imgur/BackgroundBlock/Menu" method="_on_button_2_pressed"]
