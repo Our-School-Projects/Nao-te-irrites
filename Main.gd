@@ -22,7 +22,7 @@ func _on_Dice_pressed():
 
 func _on_DiceRoll_animation_finished():
 	randomize()
-	diceFace = exVar
+	diceFace = randi() % 6+1
 	$DiceRoll.stop()
 	$DiceRoll.hide()
 	$Dice.show()
