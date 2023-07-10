@@ -1,11 +1,9 @@
-[gd_scene load_steps=65 format=3 uid="uid://c3xlcawqnxjgg"]
+[gd_scene load_steps=59 format=3 uid="uid://c3xlcawqnxjgg"]
 
 [ext_resource type="Script" path="res://dois_jogadores.gd" id="1_a66l7"]
 [ext_resource type="Texture2D" uid="uid://c735lyvln0sbq" path="res://undefined - Imgur.jpg" id="2_hg1si"]
 [ext_resource type="Texture2D" uid="uid://iqxo7iajjkq0" path="res://wrapper (1).png" id="3_uf5gu"]
 [ext_resource type="Texture2D" uid="uid://cpdy8g1n87ab8" path="res://IMG-20230528-WA0020.jpg" id="4_1jpkk"]
-[ext_resource type="Script" path="res://player.gd" id="5_xqec6"]
-[ext_resource type="Texture2D" uid="uid://dgn7r5fgkcsy1" path="res://icon.svg" id="6_0yb0s"]
 [ext_resource type="Texture2D" uid="uid://djk50b8m2allb" path="res://placeholder.png" id="7_cf5ua"]
 [ext_resource type="Texture2D" uid="uid://8kdir1x0ve0t" path="res://img/diceOne.png" id="8_ht8il"]
 [ext_resource type="Texture2D" uid="uid://bgvub6gmapcb4" path="res://img/diceTwo.png" id="9_qki11"]
@@ -55,25 +53,6 @@
 [ext_resource type="PackedScene" uid="uid://bcnxonjcbyesi" path="res://amarelo.tscn" id="53_7qgup"]
 [ext_resource type="Texture2D" uid="uid://b8q3svm8lwayx" path="res://sair-alt 1.png" id="54_spf46"]
 [ext_resource type="Script" path="res://Voltar.cs" id="55_f30ci"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tks5a"]
-atlas = ExtResource("6_0yb0s")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_84lv6"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tks5a")
-}],
-"loop": true,
-"name": &"Icon",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qsyym"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_srolj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6yfpv"]
 animations = [{
@@ -243,25 +222,6 @@ texture = ExtResource("3_uf5gu")
 position = Vector2(959, 537)
 scale = Vector2(1.0181, 1.02381)
 texture = ExtResource("4_1jpkk")
-
-[node name="player" type="CharacterBody2D" parent="."]
-visible = false
-script = ExtResource("5_xqec6")
-
-[node name="anim" type="AnimatedSprite2D" parent="player"]
-z_index = 3
-y_sort_enabled = true
-position = Vector2(560, 187)
-sprite_frames = SubResource("SpriteFrames_84lv6")
-animation = &"Icon"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-shape = SubResource("CapsuleShape2D_qsyym")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="player"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/StaticBody2D"]
-shape = SubResource("CapsuleShape2D_srolj")
 
 [node name="Placeholder" type="Sprite2D" parent="."]
 position = Vector2(547, 340)
